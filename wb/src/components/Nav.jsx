@@ -1,4 +1,4 @@
-import { Fade } from 'react-reveal';
+import { Fade } from "react-awesome-reveal";
 import './Nav.css';
 import React from 'react'
 import { useState } from 'react';
@@ -42,7 +42,8 @@ return (
           My Portfolio
           
         </Link>
-        <Fade top cascade>
+        
+        <Fade cascade direction="left" >
         <ul className={click ? "nav-menu active" : "nav-menu"}>
         
           <li className="nav-item">
@@ -87,25 +88,21 @@ return (
               smooth={true}
               className="nav-links"
              onClick={click ? handleClick : null}
+             
             >
               04.Contact
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              exact
-              to="fourth"
-              activeClassName="active"
-              smooth={true}
-              className="nav-links"
-             onClick={click ? handleClick : null}
-            >
-              <button type="button" class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Yellow</button>
-            </Link>
-          </li>
+          <li className="nav-item"> 
           
+          <a target={"_blank"} href="https://avi-cr17.github.io/html-resume/" className="btn text-yellow-200">
+          Resume
+            </a>
+          
+          </li>
         </ul>
         </Fade>
+        
 
         <div className="nav-icon" onClick={handleClick}>
           <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
