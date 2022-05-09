@@ -36,12 +36,9 @@ const [navstate,Setnavstate]=useState("navbar")
 return (
   <div>
    <div className={click ? "main-container" : ""} onClick={()=>Close()} />
-    <nav className={navstate+" shadow-2xl shadow-black"} onClick={(e)=>e.stopPropagation()}>
+    <nav className={navstate+" shadow-2xl shadow-black shadow-2xl "} onClick={(e)=>e.stopPropagation()}>
       <div className="nav-container">
-        <Link exact to="/" className="nav-logo">
-          My Portfolio
-          
-        </Link>
+        
         
         <Fade cascade direction="left" >
         <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -93,12 +90,13 @@ return (
               04.Contact
             </Link>
           </li>
-          <li className="nav-item"> 
+          <li className=""> 
           
-          <a target={"_blank"} href="https://avi-cr17.github.io/html-resume/" className="btn text-yellow-200">
-          Resume
+          <a target={"_blank"} href="https://avi-cr17.github.io/html-resume/" >
+            
+            <button type="button" className="text-yellow-400  border border-yellow-400 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-5 mb-2 
+            border-yellow-300 dark:text-yellow hover:text-black dark:hover:bg-yellow-300 ">Resume</button>
             </a>
-          
           </li>
         </ul>
         </Fade>

@@ -10,10 +10,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282f54;
+  background-color: #0a192f;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.t-height{
+  height: 200vh;
+}
+
+.writing{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  top: 0;
+}
+
+.writing2{
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  top: 0;
+}
+
+.icons{
+  font-size: 1.5rem;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  
 }
